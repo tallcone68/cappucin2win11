@@ -19,7 +19,7 @@ _Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus 
 2. jalankan file .exe nya hingga instalasi selesai
 3. klikn explore lalu cari Custom Window Corner Radius, Windows 11 Notification Center Styler, Windows 11 Start Menu Styler, Windows 11 Taskbar Styler, dan Resource Redirect(opsional). klik details lalu install untuk mengunduh
 4. pergi ke [sini](windwahk) copy paste isi file sesuai nama dari mod di windhawk. caranya, klik details di mod tersebut lalu, klik tab advanced fokus ke Mod settings
-![Masih Loading Atau File Hiang](image)
+![](image)
 5. jangan lupa klik save agar configurasi berhasil.
 6. hasilnya akan seperti ini:
 ![](image)
@@ -30,6 +30,6 @@ _Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus 
 
 
 ### komorebic
-1. ```powershell
+1.
+ ```powershell
 scoop bucket add extras
-```
