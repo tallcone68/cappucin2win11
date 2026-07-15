@@ -9,7 +9,7 @@
 4. copy lalu paste ke "C:\Program Files\Nilesoft Shell\imports" disitu ada banyak file tapi untuk tema atau penampilan fokus ke theme.nss
 5. terapkan dengan Ctrl + Right Click agar tema klik kanan diterapkan
 6. hasilnya akan seperti ini:
-![Masih Loading Atau File Hiang](image)
+![](image)
 _Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus klik Ctrl_
 
 
@@ -22,10 +22,10 @@ _Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus 
 ![Masih Loading Atau File Hiang](image)
 5. jangan lupa klik save agar configurasi berhasil.
 6. hasilnya akan seperti ini:
-![Masih Loading Atau File Hiang](image)
-![Masih Loading Atau File Hiang](image)
-![Masih Loading Atau File Hiang](image)
-![Masih Loading Atau File Hiang](image)
+![](image)
+![](image)
+![](image)
+![](image)
 
 
 
