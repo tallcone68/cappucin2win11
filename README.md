@@ -8,8 +8,6 @@
 3. download file [theme.nss](nilesoft/theme.nss)
 4. copy lalu paste ke "C:\Program Files\Nilesoft Shell\imports" disitu ada banyak file tapi untuk tema atau penampilan fokus ke theme.nss
 5. terapkan dengan Ctrl + Right Click agar tema klik kanan diterapkan
-6. hasilnya akan seperti ini:
-![](image)
 _Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus klik Ctrl_
 
 
@@ -21,11 +19,6 @@ _Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus 
 4. pergi ke [sini](windwahk) copy paste isi file sesuai nama dari mod di windhawk. caranya, klik details di mod tersebut lalu, klik tab advanced fokus ke Mod settings
 ![](image)
 5. jangan lupa klik save agar configurasi berhasil.
-6. hasilnya akan seperti ini:
-![](image)
-![](image)
-![](image)
-![](image)
 
 
 
@@ -36,7 +29,61 @@ scoop bucket add extras
 ```
 copy paste di powershell
 
+
 2. lalu install komorebi dan whkd
 ```powershell
 scoop install komorebi whkd
 ```
+
+
+3. jika belum install scoop, install dulu. jalankan 2 baris ini di powershell sebagai administrator:
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://scoop.sh | Invoke-Expression
+```
+
+
+4. agar komorebi langsung aktif saat komputer menyala jalankan ini di powershell:
+```
+komorebic enable-autostart --whkd
+```
+
+
+5. config
+```
+komorebic quickstart
+komorebic start --whkd
+```
+akan muncul file di direktori c:/Users/<nama_user>
+unduh file [komorebic.json](komorebic/komorebi.json) dan timpa file komorebic.json di sana
+di titik ini fitur snap windows di w11 sebaiknya dimatikan
+![](image)
+
+
+
+### masir
+1. unduh [installer masir](https://github.com/LGUG2Z/masir/releases/download/v0.1.2/masir-0.1.2-x86_64.msi)(versi 0.1.2) cek ke [sini](https://github.com/LGUG2Z/masir/releases) untuk versi terbaru
+2. masir berfungsi untuk mengubah fokus window pakai kursor 
+3. restart komorebi dengan masir
+```
+komorebic stop --whkd
+komorebic start --whkd --masir
+komorebic enable-autostart --whkd --masir
+```
+
+
+
+### yasb
+1. install dulu [jetbrainsmono propo](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip)
+2. ekstrak isi folder tersebut lalu install
+![](image)
+3. install yasb via scoop
+```
+scoop bucket add extras
+scoop install extras/yasb
+```
+
+
+4. unduh 3 file [di sini](YASB)
+5. pergi ke config folder yasb, lalu timpa file yang ada di sana
+6. tinggal jalankan yasb dan menu bar akan muncul di atas
