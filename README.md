@@ -8,6 +8,7 @@
 3. download file [theme.nss](nilesoft/theme.nss)
 4. copy lalu paste ke "C:\Program Files\Nilesoft Shell\imports" disitu ada banyak file tapi untuk tema atau penampilan fokus ke theme.nss
 5. terapkan dengan Ctrl + Right Click agar tema klik kanan diterapkan
+
 _Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus klik Ctrl_
 
 
@@ -17,7 +18,7 @@ _Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus 
 2. jalankan file .exe nya hingga instalasi selesai
 3. klik explore lalu cari Custom Window Corner Radius, Windows 11 Notification Center Styler, Windows 11 Start Menu Styler, Windows 11 Taskbar Styler, dan Resource Redirect(opsional). klik details lalu install untuk mengunduh
 4. pergi ke [sini](windwahk) copy paste isi file sesuai nama dari mod di windhawk. caranya, klik details di mod tersebut lalu, klik tab advanced fokus ke Mod settings
-![](image)
+![](image/windhawk.png)
 5. jangan lupa klik save agar configurasi berhasil.
 
 
@@ -57,7 +58,7 @@ komorebic start --whkd
 akan muncul file di direktori c:/Users/<nama_user>
 unduh file [komorebic.json](komorebic/komorebi.json) dan timpa file komorebic.json di sana
 di titik ini fitur snap windows di w11 sebaiknya dimatikan
-![](image)
+![](image/snap-w11.png)
 
 
 
@@ -76,7 +77,7 @@ komorebic enable-autostart --whkd --masir
 ### YASB
 1. install dulu [jetbrainsmono propo](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip)
 2. ekstrak isi folder tersebut lalu install
-![](image)
+![](image-nerd-font.png)
 3. install yasb via scoop
 ```powershell
 scoop bucket add extras
@@ -128,11 +129,55 @@ _Catatan: tacky harus dijalankan manual saat komputer baru dinyalakan. maka dari
 
 
 
+### terminal
+1. buka terminal, buka setting (Ctrl + ,) klik open json file di pojok kiri bawah
+2. copas isi file [setting.json](terminal/setting.json)
+3. atur $PROFILE ketik ini do powershell:
+```poweshell
+notepad $PROFILE
+```
+
+4. masukkan ini ke dalam file tersebut:
+```poweshell
+$env:Path += ";$env:ProgramData\starship"
+Invoke-Expression (&starship init powershell)
+
+fastfetch
+```
+
+
+
 ## hal lain yang ku install tanpa konfig
-1. cmatrix
-2. clock-rs
-4. pipes-rs
-5. btop
+1. cmatrix klik di [sini](https://github.com/nxstynate/cmatrix-win/releases/download/cmatrix/cmatrix.exe). untuk versi terbaru klik [di sini](https://github.com/nxstynate/cmatrix-win/releases/download/cmatrix)
+2. clock-rs 
+```poweshell
+cargo install clock-rs
+```
+4. pipes-rs 
+```poweshell
+scoop install pipes-rs
+```
+5. btop 
+```poweshell
+scoop install btop
+```
 6. fastfetch / winfetch
-7. vs-code
+```poweshell
+scoop install fastfetch
+```
+7. vs-code [install](https://code.visualstudio.com/)
 8. microsoft powertoys
+9. starship
+```poweshell
+winget install starship
+```
+
+atau:
+
+```poweshell
+scoop install starship
+
+```
+
+
+### Done
