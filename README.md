@@ -124,4 +124,15 @@ cargo run --release
 3. unduh file [config.yaml](tacky-border/config.yaml)
 4. copy paste ke folder config tacky-border
 
-_Catatan: tacky harus dijalankan manual saat komputer aru dinyalakan. maka dari itu, disarankan pakai border yang ada di komorebic_
+_Catatan: tacky harus dijalankan manual saat komputer baru dinyalakan. maka dari itu, disarankan pakai border yang ada di komorebic_
+
+
+
+## hal lain yang ku install tanpa konfig
+1. cmatrix
+2. clock-rs
+4. pipes-rs
+5. btop
+6. fastfetch / winfetch
+7. vs-code
+8. microsoft powertoys
