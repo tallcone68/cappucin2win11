@@ -18,7 +18,7 @@ _Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus 
 2. jalankan file .exe nya hingga instalasi selesai
 3. klik explore lalu cari Custom Window Corner Radius, Windows 11 Notification Center Styler, Windows 11 Start Menu Styler, Windows 11 Taskbar Styler, dan Resource Redirect(opsional). klik details lalu install untuk mengunduh
 4. pergi ke [sini](windwahk) copy paste isi file sesuai nama dari mod di windhawk. caranya, klik details di mod tersebut lalu, klik tab advanced fokus ke Mod settings
-![](image/windhawk.png)
+![](Preview/windhawk.png)
 5. jangan lupa klik save agar configurasi berhasil.
 
 
@@ -58,7 +58,7 @@ komorebic start --whkd
 akan muncul file di direktori c:/Users/<nama_user>
 unduh file [komorebic.json](komorebic/komorebi.json) dan timpa file komorebic.json di sana
 di titik ini fitur snap windows di w11 sebaiknya dimatikan
-![](image/snap-w11.png)
+![](Preview/snap-w11.png)
 
 
 
@@ -77,7 +77,7 @@ komorebic enable-autostart --whkd --masir
 ### YASB
 1. install dulu [jetbrainsmono propo](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip)
 2. ekstrak isi folder tersebut lalu install
-![](image/nerd-font.png)
+![](Preview/nerd-font.png)
 3. install yasb via scoop
 ```powershell
 scoop bucket add extras
