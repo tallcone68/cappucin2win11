@@ -1,183 +1,213 @@
-<h1 align="center">Catppuccin for Windows 11</h1>
+<h1 align="center">Catppuccin untuk Windows 11</h1>
 
-# Instalasi
-### NileSoft Shell
+<p align="center">
+  <img src="Preview/desktop.png" alt="Desktop Preview">
+</p>
 
-1. unduh NileSoft Shell [di sini](https://nilesoft.org/download/shell/1.9.18/setup-x64.msi)
-2. jalankan file .msi untuk instalasi hingga selesai
-3. download file [theme.nss](nilesoft/theme.nss)
-4. copy lalu paste ke "C:\Program Files\Nilesoft Shell\imports" disitu ada banyak file tapi untuk tema atau penampilan fokus ke theme.nss
-5. terapkan dengan Ctrl + Right Click agar tema klik kanan diterapkan
+## 📋 Daftar Isi
+- [NileSoft Shell](#nilesoft-shell)
+- [Windhawk](#windhawk)
+- [Komorebic](#komorebic)
+- [Masir](#masir)
+- [YASB](#yasb)
+- [Cava](#cava)
+- [Tacky-Borders (Opsional)](#tacky-borders-opsional)
+- [Terminal](#terminal)
+- [Aplikasi Tambahan](#aplikasi-tambahan)
 
-_Catatan: setelahnya klik kanan biasa akan langsung menerapkan tema tanpa harus klik Ctrl_
+---
 
+## NileSoft Shell
+Mengganti menu konteks klik kanan Windows dengan tema Catppuccin.
 
+1. Unduh installer NileSoft Shell [di sini](https://nilesoft.org/download/shell/1.9.18/setup-x64.msi)
+2. Jalankan file `.msi` dan ikuti proses instalasi hingga selesai
+3. Unduh file [theme.nss](nilesoft/theme.nss)
+4. Salin file `theme.nss` ke `C:\Program Files\Nilesoft Shell\imports\`
+5. Terapkan tema dengan **Ctrl + Klik Kanan** pada desktop atau folder
 
-### Windhawk
-1. unduh windhawk [di sini](https://ramensoftware.com/downloads/windhawk_setup.exe)
-2. jalankan file .exe nya hingga instalasi selesai
-3. klik explore lalu cari Custom Window Corner Radius, Windows 11 Notification Center Styler, Windows 11 Start Menu Styler, Windows 11 Taskbar Styler, dan Resource Redirect(opsional). klik details lalu install untuk mengunduh
-4. pergi ke [sini](windwahk) copy paste isi file sesuai nama dari mod di windhawk. caranya, klik details di mod tersebut lalu, klik tab advanced fokus ke Mod settings
-![](Preview/windhawk.png)
-5. jangan lupa klik save agar configurasi berhasil.
+> **Catatan:** Setelah diterapkan, klik kanan biasa akan langsung menggunakan tema tanpa perlu menekan Ctrl lagi.
 
+---
 
+## Windhawk
+Kustomisasi berbagai elemen Windows 11 seperti taskbar, start menu, dan notification center.
 
-### komorebic
-1.
- ```powershell
-scoop bucket add extras
-```
-copy paste di powershell
+1. Unduh Windhawk [di sini](https://ramensoftware.com/downloads/windhawk_setup.exe)
+2. Jalankan file `.exe` dan instal hingga selesai
+3. Buka aplikasi Windhawk, klik **Explore**, lalu cari dan instal mod berikut:
+   - Custom Window Corner Radius
+   - Windows 11 Notification Center Styler
+   - Windows 11 Start Menu Styler
+   - Windows 11 Taskbar Styler
+   - Resource Redirect (opsional)
+4. Buka folder [windhawk](windwahk) dan salin isi file sesuai dengan nama mod di Windhawk
+5. Tempelkan konfigurasi tersebut ke **Mod settings** pada tab **Advanced** di setiap mod
+   
+   ![](Preview/windhawk.png)
+6. Klik **Save** pada setiap mod agar konfigurasi diterapkan
 
+---
 
-2. lalu install komorebi dan whkd
-```powershell
-scoop install komorebi whkd
-```
+## Komorebic
+Window manager tiling untuk Windows.
 
-
-3. jika belum install scoop, install dulu. jalankan 2 baris ini di powershell sebagai administrator:
+### Persiapan - Install Scoop (jika belum punya)
+Jalankan perintah berikut di **PowerShell sebagai Administrator**:
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://scoop.sh | Invoke-Expression
 ```
 
+### Instalasi Komorebic
+```powershell
+scoop bucket add extras
+scoop install komorebi whkd
+```
 
-4. agar komorebi langsung aktif saat komputer menyala jalankan ini di powershell:
+### Autostart
+Agar Komorebic berjalan otomatis saat startup:
 ```powershell
 komorebic enable-autostart --whkd
 ```
 
-
-5. config
-```powershel
+### Konfigurasi
+```powershell
 komorebic quickstart
 komorebic start --whkd
 ```
-akan muncul file di direktori c:/Users/<nama_user>
-unduh file [komorebic.json](komorebic/komorebi.json) dan timpa file komorebic.json di sana
-di titik ini fitur snap windows di w11 sebaiknya dimatikan
-![](Preview/snap-w11.png)
+File konfigurasi akan dibuat di `C:\Users\<nama_user>\komorebi.json`
 
+Unduh file [komorebic.json](komorebic/komorebi.json) dan timpa file yang sudah ada.
 
+> **⚠️ Penting:** Matikan fitur **Snap Windows** di Windows 11 Settings agar tidak terjadi konflik.
+> 
+> ![](Preview/snap-w11.png)
 
-### masir
-1. unduh [installer masir](https://github.com/LGUG2Z/masir/releases/download/v0.1.2/masir-0.1.2-x86_64.msi) (versi 0.1.2) cek ke [sini](https://github.com/LGUG2Z/masir/releases) untuk versi terbaru
-2. masir berfungsi untuk mengubah fokus window pakai kursor 
-3. restart komorebi dengan masir
+---
+
+## Masir
+Mengubah fokus window berdasarkan posisi kursor (follow mouse focus).
+
+1. Unduh installer Masir [di sini](https://github.com/LGUG2Z/masir/releases/download/v0.1.2/masir-0.1.2-x86_64.msi) (versi 0.1.2)
+   
+   > Cek [halaman rilis](https://github.com/LGUG2Z/masir/releases) untuk versi terbaru
+
+2. Restart Komorebic dengan Masir:
 ```powershell
 komorebic stop --whkd
 komorebic start --whkd --masir
 komorebic enable-autostart --whkd --masir
 ```
 
+---
 
+## YASB
+Status bar kustom di bagian atas layar.
 
-### YASB
-1. install dulu [jetbrainsmono propo](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip)
-2. ekstrak isi folder tersebut lalu install
-![](Preview/nerd-font.png)
-3. install yasb via scoop
+1. Unduh dan instal **JetBrainsMono Nerd Font**:
+   - Unduh dari [sini](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip)
+   - Ekstrak dan instal semua font
+   
+   ![](Preview/nerd-font.png)
+
+2. Instal YASB via Scoop:
 ```powershell
 scoop bucket add extras
 scoop install extras/yasb
 ```
 
+3. Unduh 3 file konfigurasi [di sini](YASB)
+4. Salin ketiga file tersebut ke `C:\Users\<nama_user>\.config\yasb\` dan timpa file yang ada
+5. Jalankan YASB dari Start Menu atau terminal
 
-4. unduh 3 file [di sini](YASB)
-5. copy paste 3 file tersebut ke config folder yasb (C:\Users\<nama user>\.config\yasb), lalu timpa file yang ada di sana
-6. tinggal jalankan yasb dan menu bar akan muncul di atas
+> **Catatan:** YASB harus dijalankan secara manual setiap kali komputer dinyalakan.
 
-_Catatan: YASB harus di jalankan manual saat komputer baru dinyalakan_
+---
 
+## Cava
+Visualizer audio berbasis terminal.
 
+1. Unduh file konfigurasi [di sini](cava)
+2. Instal Cava melalui salah satu cara berikut:
 
-### cava 
-1. unduh file config di [sini](cava)
-2. sambil menunggu install cava lewat powershell sebagai administrator
-
-via winget
+**Via Winget:**
 ```powershell
 winget install -e --id karlstav.cava
 ```
 
-atau via scoop
+**Via Scoop:**
 ```powershell
-scoop install extras/cava 
+scoop install extras/cava
 ```
 
+3. Letakkan file konfigurasi di `C:\Users\<nama_user>\AppData\Roaming\cava\config`
 
+---
 
-### tacky-border (opsional karena komorebi punya border bawaan di file komorebic.json)
-1. install dulu [visual studio code](https://visualstudio.microsoft.com/downloads/) dan rust:
+## Tacky-Borders (Opsional)
+Border aktif untuk window manager. *Disarankan menggunakan border bawaan Komorebic saja.*
+
+1. Instal [Visual Studio Code](https://visualstudio.microsoft.com/downloads/) dan Rust:
 ```powershell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-2. klon repo, dan jalankan tacky-border
+2. Clone dan jalankan Tacky-Borders:
 ```powershell
 git clone https://github.com/lukeyou05/tacky-borders.git
 cd tacky-borders
 cargo build --release
 cargo run --release
 ```
-3. unduh file [config.yaml](tacky-border/config.yaml)
-4. copy paste ke folder config tacky-border
 
-_Catatan: tacky harus dijalankan manual saat komputer baru dinyalakan. maka dari itu, disarankan pakai border yang ada di komorebic_
+3. Unduh file [config.yaml](tacky-border/config.yaml)
+4. Letakkan di folder konfigurasi Tacky-Borders
 
+> **Catatan:** Tacky-Borders harus dijalankan manual setiap startup. Karena itu, lebih disarankan menggunakan border bawaan Komorebic.
 
+---
 
-### terminal
-1. buka terminal, buka setting (Ctrl + ,) klik open json file di pojok kiri bawah
-2. copas isi file [setting.json](terminal/setting.json)
-3. atur $PROFILE ketik ini do powershell:
-```poweshell
+## Terminal
+Konfigurasi Windows Terminal dengan tema Catppuccin.
+
+1. Buka Windows Terminal, buka **Settings** (`Ctrl + ,`)
+2. Klik **Open JSON file** di pojok kiri bawah
+3. Salin dan tempel isi file [settings.json](terminal/setting.json)
+4. Atur PowerShell Profile:
+```powershell
 notepad $PROFILE
 ```
-
-4. masukkan ini ke dalam file tersebut:
-```poweshell
+5. Masukkan kode berikut ke dalam file:
+```powershell
 $env:Path += ";$env:ProgramData\starship"
 Invoke-Expression (&starship init powershell)
 
 fastfetch
 ```
 
+---
 
+## Aplikasi Tambahan
+Aplikasi berikut diinstal tanpa konfigurasi tambahan:
 
-## hal lain yang ku install tanpa konfig
-1. cmatrix klik di [sini](https://github.com/nxstynate/cmatrix-win/releases/download/cmatrix/cmatrix.exe). untuk versi terbaru klik [di sini](https://github.com/nxstynate/cmatrix-win/releases/download/cmatrix)
-2. clock-rs 
-```poweshell
-cargo install clock-rs
-```
-4. pipes-rs 
-```poweshell
-scoop install pipes-rs
-```
-5. btop 
-```poweshell
-scoop install btop
-```
-6. fastfetch / winfetch
-```poweshell
-scoop install fastfetch
-```
-7. vs-code [install](https://code.visualstudio.com/)
-8. microsoft powertoys
-9. starship
-```poweshell
-winget install starship
-```
+| Aplikasi | Perintah Instalasi |
+|----------|-------------------|
+| **Cmatrix** | Unduh [di sini](https://github.com/nxstynate/cmatrix-win/releases/download/cmatrix/cmatrix.exe) |
+| **Clock-rs** | `cargo install clock-rs` |
+| **Pipes-rs** | `scoop install pipes-rs` |
+| **Btop** | `scoop install btop` |
+| **Fastfetch** | `scoop install fastfetch` |
+| **VS Code** | Unduh [di sini](https://code.visualstudio.com/) |
+| **Microsoft PowerToys** | Unduh dari Microsoft Store atau [GitHub](https://github.com/microsoft/PowerToys) |
+| **Starship** | `winget install starship` atau `scoop install starship` |
 
-atau:
+---
 
-```poweshell
-scoop install starship
+## Done
 
-```
+Setelah semua langkah selesai, sistem Windows 11 Anda akan bertransformasi dengan tema Catppuccin yang elegan dan fungsionalitas window manager yang powerful.
 
+> 💡 **Tips:** Jika ada kendala, pastikan semua path sudah sesuai dan aplikasi berjalan di background.
 
-### Done
+---
